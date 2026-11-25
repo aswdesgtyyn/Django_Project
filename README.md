@@ -87,3 +87,6 @@
 
 ---
 **Q: Why did the tutorial add {% csrf_token %} to the voting form?**
+> **Answer :**
+> It was added to protect the POST form against Cross-Site Request Forgery (CSRF) attacks.
+> If it was not done malicious websites could trick user's browsers into sending unintended POST requests.
