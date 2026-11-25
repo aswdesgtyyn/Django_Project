@@ -12,6 +12,7 @@
 
 ---
 **Q: What are the client and the server, and how do they talk to each other?**
+
 > **Answer :**
 >  - Client is the device which requests a reasource from a server like a webpage, picture, video, etc.
 >  - Server is the device which gets the reasource and sends it to the Client.
@@ -20,6 +21,8 @@
 
 ---
 **Q: What is HTTP? What's inside a request and a response?**
+
+> **Answer :**
 > - HTTP is Hyper Text Transfer Protocol is communication protocol that helps clients and servers transfer web reasources like webpages, images, etc
 > - In a Request
 >    1. HTTP Method 
@@ -35,6 +38,8 @@
 >    4. Response Body 
 
 **Q: What's the difference between GET and POST, and when would you use each?**
+
+> **Answer :**
 > **GET Method**
 > - Get Requests requests some resource from the server.
 > **POST Method**
@@ -43,6 +48,8 @@
 > Both are different as one (POST) is used to send data to server whereas one (GET) is used to request some data from the server.
 ---
 **Q: What do status codes like 200, 302, 404 and 500 mean?**
+
+> **Answer :**
 > - 200 (OK): Means request succeeded
 > - 302 (FOUND): Means the resource has been temporarily moved and redirects to it.
 > - 404 (NOT FOUND): Means the requested resource was not found.
@@ -50,6 +57,8 @@
 
 ---
 **Q: What jobs do HTML, CSS and JavaScript each do on a page?**
+
+> **Answer :**
 > - HTML : Defines different elements and content of a webpage and sturture of the webpage.
 > - CSS  : Adds the Style of the webpage (Colours, Borders, Backgrounds, etc)
 > - JS   : Adds Functionality to a Webpage (Scripts, Interative Elements, etc)
@@ -57,8 +66,24 @@
 ---
 **Q: How does a website remember who you are between pages? (Look up cookies and sessions.)**
 
+> **Answer :**
+> To remember who we are the website asks our browser to store a small string on our computer called a cookie.
+> Whenever we visit the website again, The Browser sends the cookie along with our HTTP requests.
+> The Website sets the cookie to a unique random string of characters and stores it in its database for future reference.
+> So that whenever we visit the website the webiste instantly knows who we are through the unique random string of characters.
+
 ---
 **Q: In Django, how does a request travel through URLs, views, models and templates before a response comes back?**
+
+> **Answer :**
+> 1. urls.py
+>    - The requested path is first matched against the list of urls to see if its callable.
+> 2. views.py
+>    - Handles the logic of the request.
+> 3. models.py
+>    - Handles the database lookup/updatation for a request
+> 4. templates/
+>    - Helps model the HTML reponses to a request
 
 ---
 **Q: Why did the tutorial add {% csrf_token %} to the voting form?**
